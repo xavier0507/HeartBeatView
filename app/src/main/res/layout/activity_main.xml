@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.xy.heartbeatimageview.activity.MainActivity">
+
+    <com.xy.heartbeatimageview.view.HeartBeatImageView
+        android:id="@+id/default_heart_view"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <com.xy.heartbeatimageview.view.HeartBeatImageView
+        android:id="@+id/heart_view_02"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:animCounter="20"
+        app:animMoveFactor="1"
+        app:heartColor="@color/color_FFFF8800" />
+
+    <com.xy.heartbeatimageview.view.HeartBeatImageView
+        android:id="@+id/heart_view_03"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:animCounter="10"
+        app:animMoveFactor="2"
+        app:heartColor="@color/color_FF00DDDD" />
+
+    <com.xy.heartbeatimageview.view.HeartBeatImageView
+        android:id="@+id/heart_view_04"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:animCounter="30"
+        app:animMoveFactor="3"
+        app:heartColor="@color/color_FF9F88FF" />
+</LinearLayout>
