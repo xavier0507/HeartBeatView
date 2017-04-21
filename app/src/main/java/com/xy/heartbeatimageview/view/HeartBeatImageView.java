@@ -45,6 +45,7 @@ public class HeartBeatImageView extends View {
         this.animMoveFactor = typedArray.getFloat(R.styleable.HeartBeatImageView_animMoveFactor, DEFAUT_ANIM_MOVE_FACTOR);
         this.animCounter = typedArray.getInt(R.styleable.HeartBeatImageView_animCounter, DEFAULT_ANIM_COUNTER);
         this.heartColor = typedArray.getColor(R.styleable.HeartBeatImageView_heartColor, DEFAULT_COLOR);
+        typedArray.recycle();
     }
 
     private void initPaint() {
